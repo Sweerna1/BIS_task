@@ -19,5 +19,6 @@ from item import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('list/',views.ListView),
+    path('list/',views.ListView, name="items-list"),
+    path('create/',views.CreateView, name="create-item")
 ]
